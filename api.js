@@ -21,7 +21,7 @@ async function request(url, options = {}) {
     try {
       const errorData = await response.json();
       message = errorData.message || errorData.error || message;
-    } catch { /* The error response may not contain JSON. */ }
+    } catch { /* The error response may or not contain JSON. */ }
     throw new Error(message);
   }
   let data = null;
@@ -30,7 +30,7 @@ async function request(url, options = {}) {
   }
   return { data, status: response.status };
 }
-
+//Rendering notes function
 function renderNotes() {
   notesList.replaceChildren();
   if (notes.length === 0) {
@@ -73,7 +73,7 @@ async function loadNotes() {
     loadButton.disabled = false;
   }
 }
-
+//Creating notes
 async function createNote(event) {
   event.preventDefault();
   const title = titleInput.value.trim();
@@ -101,6 +101,7 @@ async function createNote(event) {
     submitButton.disabled = false;
   }
 }
+//Delete notes
 
 async function deleteNote(id, button) {
   button.disabled = true;
