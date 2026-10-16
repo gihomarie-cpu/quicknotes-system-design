@@ -3,7 +3,7 @@
 body { margin: 0; }
 .container, .hero main { width: min(900px, calc(100% - 32px)); margin-inline: auto; }
 .hero { padding: 38px 0; background: #243b67; color: white; }
-.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 3rem); }
+.hero h1 { margin: 0; font-size: clamp(2rem, 5vw, 4rem); }
 .hero p { margin-bottom: 0; }
 .eyebrow { color: #c7d7ff; font-weight: 700; letter-spacing: .12em; }
 main.container { padding-block: 26px; }
