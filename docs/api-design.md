@@ -1,3 +1,6 @@
+
+//Rest APi for design api
+
 # QuickNotes REST API Design
 
 This document describes the real QuickNotes backend API, not the JSONPlaceholder practice API. Base URL: `https://api.quicknotes.example/v1`. Requests and responses use JSON. Protected routes require `Authorization: Bearer <access-token>`. The server derives the note owner from the authenticated identity; it must not trust a client-supplied `userId`.
