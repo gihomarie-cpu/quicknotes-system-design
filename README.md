@@ -22,7 +22,8 @@ quicknotes/
 2. Start a local development server (for example, VS Code Live Server) and open `index.html` through it.
 3. Click **Load notes** to request up to 10 sample posts from `https://jsonplaceholder.typicode.com/posts?_limit=10`.
 4. Enter a title (required, maximum 100 characters) and optional body, then click **Create note**.
-5. Click a note's **Delete** button to test the DELETE request.
+
+5. Click a note's **Delete** button to test the DELETE request , check if it works.
 
 Your browser needs internet access to call JSONPlaceholder. JSONPlaceholder simulates POST and DELETE; it does not permanently change its sample dataset. A created note is kept in the current page's JavaScript array and disappears after refreshing or loading the server data again.
 
